@@ -15,7 +15,7 @@ body, html {
 .header-gif {
     width: 100%; /* This makes the gif span the full width of the page */
     height: 20vh; /* This sets the height to be 1/5 (20%) of the viewport height */
-    background-image: url('/Users/ayseasliilhan/Desktop/Harmless Communication/static/heading.gif');
+    background-image: url('/Users/ayseasliilhan/Desktop/harmless-communication/h-c/static/heading.gif');
     background-size: cover; /* This ensures the gif covers the full area of the div without stretching */
     background-position: center; /* This centers the gif in the div */
 }
