@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+    font-family: "input-mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #00ff00; /* Set font color to green */
+}
+
+.header-gif {
+    width: 100%; /* This makes the gif span the full width of the page */
+    height: 20vh; /* This sets the height to be 1/5 (20%) of the viewport height */
+    background-image: url('/Users/ayseasliilhan/Desktop/Harmless Communication/static/heading.gif');
+    background-size: cover; /* This ensures the gif covers the full area of the div without stretching */
+    background-position: center; /* This centers the gif in the div */
+}
+
+.gradient-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(black, black 60%, black 60%, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure it's above the default layer */
+}
+
+.transparent-section {
+    width: 100%;
+    height: 100vh; /* Adjust based on content */
+    background-color: transparent; /* Ensure it's transparent */
+    color: #000; /* Adjust text color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optionally, ensure it's initially not visible or below the gradient */
+    z-index: -1; /* Adjust as needed */
+    position: relative;
+}
+
+.content h1 {
+    margin-top: -700px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+.info{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 250px;
+    padding: 50px;
+}
+
+.information-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px; /* Increased padding for a thicker appearance */
+    z-index: 3; /* Ensure this is always on top */
+    display: flex; /* Use flexbox to layout columns */
+    justify-content: space-between; /* Space out the columns */
+}
+
+.info-column {
+    flex: 1; /* Each column takes up equal width */
+    padding: 0 10px; /* Add some padding inside each column */
+}
+
+/* Optional: Add more specific styling for headers or paragraphs inside columns */
+.info-column h3 {
+    margin-bottom: 10px; /* Add space below the header */
+}
+
+.info-column p {
+    font-size: 14px; /* Adjust font size for paragraph text, if desired */
+}
+
+a {
+    color: #00ff00; /* Directly setting the color to match the body text */
+    text-decoration: none; /* Optionally removes underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optionally add underline on hover for better UX */
+}
+
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    z-index: 0; /* Behind everything else */
+}
+
